@@ -1,0 +1,85 @@
+Worldpay - Processo Seletivo Desenvolvedor Senior
+Obrigado pela sua participação em nosso Processo Seletivo!
+Você será requerido a desenvolver dois desafios de programação, um em Object Pascal e outro em Java. O prazo final para envio dos resultados é 06 de Junho de 2016.
+São 2 vagas temporárias PJ por 4 meses, com boa probabilidade de efetivação CLT posterior.
+Digite seu nome
+Email
+Curriculum Vitae
+Copie e cole aqui seu CV
+Salario PJ Pretendito
+Salário CLT Pretendito em caso de efetivação.
+
+First Challenge
+Problem Description
+
+Create an Object Pascal shared library, suitable for use in a server-side application, that can take a Longint argument in the range 0 to 999,999,999 inclusive and returns the equivalent number, as a String, in British English words.
+
+Sample Data
+Input               Output
+0                     zero
+1                     one
+21                   twenty one
+105                 one hundred and five
+123                 one hundred and twenty three
+1005               one thousand and five
+1042               one thousand and forty two
+1105               one thousand one hundred and five
+56945781       fifty six million nine hundred and forty five thousand seven hundred and eighty one
+999999999     nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine.
+
+
+Guidelines
+• The solution must be correct. Please pay attention to the specific conventions of British English, particularly concerning the use of ‘and’ between certain phrases. 
+• The solution is not expected to involve a command line or GUI application – we’re looking for an object-oriented Linux library that could be packaged as a .so and used in a larger application.
+• The solution should not make use of external libraries other than for testing purposes.
+• The solution should demonstrate a candidate’s abilities as a software engineer including, for example, TDD principles, general object-oriented principles and domain modeling principles. 
+• Please submit a solution that captures the business domain for the problem
+• Git should be used as the versioning control system to demonstrate the progress of the coding
+
+PLEASE INDICATE INTO THE BOX BELOW THE GIT REPOSITORY WHERE WE CAN ANALISE YOUR PROJECT
+
+Second Challenge
+Problem Description
+
+Create a Java program to solve the following problem:
+
+The problem is as follows: choose a number, reverse its digits and add it to the original. If the sum is not a palindrome (which means, it is not the same number from left to right and right to left), repeat this procedure.
+
+For example:
+
+195 (initial number) + 591 (reverse of initial number) = 786
+
+786 + 687 = 1473
+
+1473 + 3741 = 5214
+
+5214 + 4125 = 9339 (palindrome)
+In this particular case the palindrome 9339 appeared after the 4th addition. This method leads to palindromes in a few step for almost all of the integers. But there are interesting exceptions. 196 is the first number for which no palindrome has been found. It is not proven though, that there is no such a palindrome.
+
+INPUT SAMPLE:
+
+Your program should accept as its first argument a path to a filename. Each line in this file is one test case. Each test case will contain an integer n < 10,000. Assume each test case will always have an answer and that it is computable with less than 100 iterations (additions).
+
+OUTPUT SAMPLE:
+
+For each line of input, generate a line of output which is the original input, the number of iterations (additions) to compute the palindrome and the resulting palindrome. (they should be on one line and separated by a single space character).
+
+For example:
+
+195 4 9339
+
+Guidelines
+• The solution must be correct.
+• The solution should not make use of external libraries other than for testing purposes.
+• The solution should demonstrate a candidate’s abilities as a software engineer including, for example, TDD principles, general object-oriented principles and domain modeling principles. 
+• Please submit a solution that captures the business domain for the problem
+• Git should be used as the versioning control system to demonstrate the progress of the coding
+
+PLEASE INDICATE INTO THE BOX BELOW THE GIT REPOSITORY WHERE WE CAN ANALISE YOUR PROJECT
+
+
+Enviar
+Nunca forneça sua senha. Não forneça informações pessoais para alguém em quem você não confia.
+Relatar Abuso
+ Da plataforma Microsoft Excel
+OneDrive | Termos de Uso | Privacidade e Cookies | Ajudar a Aperfeiçoar o Office
