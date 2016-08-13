@@ -8,8 +8,6 @@ namespace cnova.console
 
     public class FriendFinder
     {
-        public const double DEFAULT_DISTANCE_IN_METERS = 500;
-
         private List<Person> Friends { get; set; }
 
         private GeoCoordinate VisitLocation { get; set; }
@@ -41,8 +39,8 @@ namespace cnova.console
 
             VisitLocation = new GeoCoordinate(friend.Location.Latitude, friend.Location.Longitude);
         }
-        
-        public List<Person> GetFriendsCloseToMe(double defaultDistanceInMeters = DEFAULT_DISTANCE_IN_METERS)
+
+        public List<Person> GetFriendsCloseToMe(double? rangeDistanceInMeters = null)
         {
             if (Friends == null)
                 throw new ArgumentNullException("Friends");
@@ -50,16 +48,18 @@ namespace cnova.console
             if (VisitLocation == null)
                 throw new ArgumentNullException("VisitLocation");
 
+            if (rangeDistanceInMeters != null)
+            {
+                return Friends.Where(_ => _.Location != VisitLocation
+                                            && VisitLocation.GetDistanceTo(_.Location) <= rangeDistanceInMeters)
+                                            .Take(3).ToList();
+            }
 
-            return Friends.Where(_ => _.Location != VisitLocation
-                                        && VisitLocation.GetDistanceTo(_.Location) <= defaultDistanceInMeters)
-                                        .Take(3).ToList();
+            return Friends.Where(_ => _.Location != VisitLocation)
+                            .OrderBy(_ => VisitLocation.GetDistanceTo(_.Location))
+                            .Take(3)
+                            .ToList();
 
-        }
-
-        public double GetDefaultDistanceInMeters()
-        {
-            return DEFAULT_DISTANCE_IN_METERS;
         }
     }
 }

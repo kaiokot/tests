@@ -1,0 +1,6 @@
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\bin\Debug\cnova.console.exe.config
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\obj\Debug\cnova.console.csprojResolveAssemblyReference.cache
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\bin\Debug\cnova.console.exe
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\bin\Debug\cnova.console.pdb
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\obj\Debug\cnova.console.exe
+C:\Users\kaio\Documents\GitHub\tests\cnova\cnova.console\obj\Debug\cnova.console.pdb

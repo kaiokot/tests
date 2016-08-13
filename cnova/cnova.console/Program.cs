@@ -16,7 +16,7 @@ namespace cnova.console
 
                 var friendsClose = finder.GetFriendsCloseToMe();
 
-                Console.WriteLine($"Friends close to { friend.Name } (in { finder.GetDefaultDistanceInMeters()} mts) : " + Environment.NewLine);
+                Console.WriteLine($"Friends close to { friend.Name } : " + Environment.NewLine);
 
                 friendsClose.ForEach(_ => Console.Write(_.Name + Environment.NewLine));
 
